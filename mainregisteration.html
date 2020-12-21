@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title> Registeration Form </title>
+    <link rel="stylesheet" type="text/css" href="miniprj6.css">   
+</head>
+    <body>
+        <a href="loginform.html"><input type="submit" id="login" name="submit" value="Login"></a>
+        
+    <div class="login-box">
+    <!-- <img src="avatar.png" class="avatar"> -->
+        <h1>Register Here</h1>
+            <form action="registeration.php" method="POST" enctype="multipart/form-data">
+            <p>Firstname</p>
+            <input type="text" name="firstname" placeholder="Enter firstname" required>
+            <p>Lastname</p>
+            <input type="text" name="lastname" placeholder="Enter lastname" required>
+            <p>Email-ID</p>
+            <input type="email" name="email" placeholder="Enter email-id" required>
+            <p>Contact</p>
+            <input type="text" name="contact" placeholder="Enter number" maxlength="10" pattern="\d{10}">
+            <p>Age</p>
+            <input type="number" name="age" min="18" max="60" placeholder="Enter age" required>
+            <input type="file" name="image" id="image" required>
+            <p>Password</p>
+            <input type="password" name="code" placeholder="Enter Password" minlength="7" required>
+            <p>Confirm Password</p>
+            <input type="password" name="confirmcode" placeholder="Enter Password Again" minlength="7" required>
+            <input type="submit" name="submit" value="Register">
+            <!-- <a href="#">Forget Password</a>     -->
+            </form>
+        
+        
+        </div>
+    
+    </body>
+</html>
