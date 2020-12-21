@@ -6,7 +6,7 @@
 
 
 
-$target_dir = "imge/";
+$target_dir = "../imge/";
 // $target_file = $target_dir .($_FILES["image"]["name"]);
 // $uploadOk = 1;
 //  $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -25,7 +25,7 @@ $code = $_POST["passwrd"];
     while($row = $result->fetch_assoc()) {
 ?>
 <table style="width:100%">
-<link rel="stylesheet" type="text/css" href="miniprj6.css">
+<link rel="stylesheet" type="text/css" href="../css/miniprj6.css">
 <tr>
     <th>Name</th>
     <!-- <th>Lastname</th> -->
@@ -50,7 +50,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         echo "Hello!!&nbsp;".$row["firstname"]."  ". $row["lastname"];      
 
-echo "<img src='".$row["image"]."' style='width:50px; height:50px; border-radius:100%; float:right;'>";
+echo "<img src='../".$row["image"]."' style='width:50px; height:50px; border-radius:100%; float:right;'>";
 }
 }
 
@@ -67,7 +67,7 @@ if ($result->num_rows > 0) {
         <td> <?php      echo $row["email_id"];?> </td>
         <td> <?php      echo $row["contact"];?> </td>
         <td> <?php      echo $row["age"];?> </td>
-        <td> <?php      echo "<img src='".$row["image"]."' style='width:100px; height:100px; border-radius:100%;'>";?> </td>
+        <td> <?php      echo "<img src='../".$row["image"]."' style='width:100px; height:100px; border-radius:100%;'>";?> </td>
 
         </tr>
 <?php

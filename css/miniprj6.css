@@ -2,7 +2,7 @@ body{
    
     margin: 0;
     padding: 0;
-    background: url(bg2.jpg);
+    background: url(../assets/bg2.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -177,5 +177,6 @@ table, td, th {
   }
   td {
     text-align: center;
+    
     
   }
